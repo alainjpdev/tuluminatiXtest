@@ -24,7 +24,7 @@ const Property = ({ property, propertiesVip, propertiesRelated }) => {
   return (
     <div>
       <Head>
-        <title>WebImmo</title>
+        <title>Tuluminati X</title>
       </Head>
       {property && (
         <Layout>

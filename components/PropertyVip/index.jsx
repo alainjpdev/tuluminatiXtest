@@ -11,6 +11,7 @@ import {
 } from "mdb-react-ui-kit";
 import { PriceFormated } from "../Helpers";
 import Link from "next/link";
+import Map from "../Map";
 
 const PropertyVip = ({ properties }) => (
   <section
@@ -20,6 +21,7 @@ const PropertyVip = ({ properties }) => (
     <h2 className="h2-responsive font-weight-bold text-center my-4 text-night">
     The best properties in Riviera Maya
     </h2>
+    <Map/>
     <MDBRow>
       {properties &&
         properties.map((property) => (

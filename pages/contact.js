@@ -24,7 +24,7 @@ const ContactPage = () => {
   return (
     <div>
       <Head>
-        <title>WebImmo - Contact</title>
+        <title>Tuluminati X - Contact</title>
       </Head>
       <Layout>
         <MDBContainer>
