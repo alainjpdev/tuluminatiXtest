@@ -21,7 +21,7 @@ export default function Home({ propertiesVip, properties }) {
     return (
       <div>
         <Head>
-          <title>WebImmo</title>
+          <title>TuluminatiX</title>
           <link rel="icon" href="/favicon.ico" />
         </Head>
         <Layout>

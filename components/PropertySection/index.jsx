@@ -16,7 +16,7 @@ import Link from "next/link";
 const PropertySection = ({ properties, handleDisplay }) => (
   <section className="container-fluid mb-3 mt-5">
     <h2 className="h2-responsive font-weight-bold text-center mb-4 text-night">
-      Découvrez notre Catalogue
+    Our Hottest Investment Opportunities
     </h2>
     <MDBRow>
       {properties &&
@@ -57,11 +57,11 @@ const PropertySection = ({ properties, handleDisplay }) => (
     <div className="text-center">
       <Link href="/properties">
         <button className="lift py-3 globalBtn my-3">
-          Voir tous nos biens
+        Check all our homes
         </button>
       </Link>
       <button className="lift py-3 ml-3 globalBtn my-3" onClick={handleDisplay}>
-        Pourquoi nous choisir ?
+      Why us?
       </button>
     </div>
   </section>

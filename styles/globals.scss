@@ -137,7 +137,7 @@ a {
   color: $dark;
 
   &:hover {
-    color: $white;
+    color: blue;
   }
 }
 
@@ -162,7 +162,7 @@ a {
   font-weight: 900;
   pointer-events: none;
   content: "\f142";
-  color: $white;
+  color: $dark;
 }
 
 .login-row {

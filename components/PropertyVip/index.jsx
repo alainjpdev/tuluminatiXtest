@@ -18,7 +18,7 @@ const PropertyVip = ({ properties }) => (
     style={{ marginTop: 60 + "px !important" }}
   >
     <h2 className="h2-responsive font-weight-bold text-center my-4 text-night">
-      Découvrez nos biens sponsorisés
+    The best properties in Riviera Maya
     </h2>
     <MDBRow>
       {properties &&

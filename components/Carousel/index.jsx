@@ -13,9 +13,10 @@ const Carousel = () => (
       cancelOnInteraction={true}
       interval={6000}
     >
-      <div data-src="/images/villa.jpeg" />
-      <div data-src="/images/apartment.jpeg" />
-      <div data-src="/images/pool.jpeg" />
+      <div data-src="/images/2.jpg" />
+      <div data-src="/images/tulump.png" />
+      <div data-src="/images/beach2.jpg" />
+      
     </AutoPlaySlider>
 );
 

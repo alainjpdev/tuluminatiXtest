@@ -23,14 +23,14 @@ const Header = () => {
   const { logout, user, isAuthenticated } = useAuth();
 
   return (
-    <MDBNavbar className="text-white bg-night py-4" expand="md">
+    <MDBNavbar className="py-2" expand="md">
       <MDBNavbarToggler onClick={handleToggle} />
       <MDBCollapse id="navbarCollapse" navbar isOpen={isOpen}>
         <MDBNavbarNav left>
           <MDBNavItem active={router.pathname === "/"}>
             <Link href="/">
               <a className="nav-link">
-                <MDBIcon icon="home" className="mr-1" />
+                {/* <MDBIcon icon="home" className="mr-1" /> */}
                 Home
               </a>
             </Link>
@@ -38,8 +38,16 @@ const Header = () => {
           <MDBNavItem>
             <Link href="/properties" passHref>
               <a className="nav-link">
-                <MDBIcon icon="building" className="mr-1" />
-                Lista de propiedades
+                {/* <MDBIcon icon="building" className="mr-1" /> */}
+                Buy
+              </a>
+            </Link>
+          </MDBNavItem>
+          <MDBNavItem>
+            <Link href="/properties" passHref>
+              <a className="nav-link">
+                {/* <MDBIcon icon="building" className="mr-1" /> */}
+                Rent
               </a>
             </Link>
           </MDBNavItem>
@@ -55,12 +63,12 @@ const Header = () => {
           <MDBNavItem active={router.pathname === "/contact"}>
             <Link href="/contact">
               <a className="nav-link">
-                <MDBIcon icon="address-book" className="mr-1" />
+                {/* <MDBIcon icon="address-book" className="mr-1" /> */}
                 Contact
               </a>
             </Link>
           </MDBNavItem>
-          {!isAuthenticated && (
+          {/* {!isAuthenticated && (
             <MDBNavItem active={router.pathname === "/login"}>
               <Link href="/login">
                 <a className="nav-link">
@@ -69,7 +77,7 @@ const Header = () => {
                 </a>
               </Link>
             </MDBNavItem>
-          )}
+          )} */}
 
           {isAuthenticated && (
             <>
