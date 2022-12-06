@@ -26,11 +26,11 @@ const SearchFilter = () => {
 
   const onSubmit = (event) => {
     event.preventDefault();
-    router.push(
+    /*router.push(
       `/property/search?${values.title && `title=${values.title}`}${
         values.category && `&category=${values.category}`
       }`
-    );
+    );*/
   };
 
   return (

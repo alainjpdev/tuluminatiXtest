@@ -1,6 +1,5 @@
 import React from "react";
 import { MDBContainer, MDBDataTableV5, MDBIcon, MDBView } from "mdbreact";
-import { AdminRoute } from "../../auth/adminRoutes";
 import Layout from "../../components/Layout";
 import dayjs from "dayjs";
 import { PriceFormated } from "../../components/Helpers";
@@ -137,4 +136,4 @@ const PropertyList = () => {
   return <div></div>;
 };
 
-export default AdminRoute(PropertyList);
+export default PropertyList;
