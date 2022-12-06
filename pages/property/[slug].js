@@ -1,6 +1,5 @@
 import React from "react";
 import Head from "next/head";
-import api from "../../auth/axios.js";
 import Layout from "../../components/Layout";
 import CardCarousel from "../../components/CardCarousel";
 import {

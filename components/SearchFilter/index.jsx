@@ -1,10 +1,6 @@
 import React, { useState } from "react";
 import { MDBIcon, MDBRow } from "mdb-react-ui-kit";
-import api from "../../auth/axios";
 import { useRouter } from "next/router";
-import useSWR from "swr";
-
-const fetcher = (url) => api.get(url).then((response) => response.data);
 
 const CategoryList = ({ options }) => {
   return (
@@ -23,8 +19,6 @@ const SearchFilter = () => {
     title: "",
     category: "",
   });
-
-  const { data } = useSWR("/api/categories", fetcher);
 
   const handleChange = (name) => (event) => {
     setValues({ ...values, [name]: event.target.value });
@@ -71,7 +65,7 @@ const SearchFilter = () => {
                   className="form-control form-field"
                 />
                 <span className="input-group-text customColor">
-                  <MDBIcon icon="search" onClick={onSubmit}/>
+                  <MDBIcon icon="search" onClick={onSubmit} />
                 </span>
               </div>
             </div>

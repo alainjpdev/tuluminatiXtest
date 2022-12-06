@@ -19,9 +19,9 @@ const PropertyVip = ({ properties }) => (
     style={{ marginTop: 60 + "px !important" }}
   >
     <h2 className="h2-responsive font-weight-bold text-center my-4 text-night">
-    The best properties in Riviera Maya
+      The best properties in Riviera Maya
     </h2>
-    <Map/>
+    <Map />
     <MDBRow>
       {properties &&
         properties.map((property) => (

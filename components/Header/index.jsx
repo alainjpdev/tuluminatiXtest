@@ -8,7 +8,6 @@ import {
   MDBIcon,
 } from "mdbreact";
 import Link from "next/link";
-import useAuth from "../../auth/context";
 import { useRouter } from "next/router";
 
 const Header = () => {
@@ -19,8 +18,6 @@ const Header = () => {
   const handleToggle = () => {
     setIsOpen(!isOpen);
   };
-
-  const { logout, user, isAuthenticated } = useAuth();
 
   return (
     <MDBNavbar className="py-2" expand="md">
@@ -51,13 +48,6 @@ const Header = () => {
               </a>
             </Link>
           </MDBNavItem>
-          {isAuthenticated && user.role === "admin" && (
-            <MDBNavItem>
-              <Link href="/property/list">
-                <a className="nav-link">Dashboard</a>
-              </Link>
-            </MDBNavItem>
-          )}
         </MDBNavbarNav>
         <MDBNavbarNav right>
           <MDBNavItem active={router.pathname === "/contact"}>
@@ -68,34 +58,6 @@ const Header = () => {
               </a>
             </Link>
           </MDBNavItem>
-          {/* {!isAuthenticated && (
-            <MDBNavItem active={router.pathname === "/login"}>
-              <Link href="/login">
-                <a className="nav-link">
-                  <MDBIcon icon="user-alt" className="mr-1" />
-                  Connexion
-                </a>
-              </Link>
-            </MDBNavItem>
-          )} */}
-
-          {isAuthenticated && (
-            <>
-              <MDBNavItem>
-                <div className="nav-link">
-                  <MDBIcon icon="user-alt" className="mr-1" />
-                  Bonjour {user.username}
-                </div>
-              </MDBNavItem>
-
-              <MDBNavItem>
-                <a className="nav-link" onClick={logout}>
-                  <MDBIcon icon="power-off" className="mr-1" />
-                  Déconnexion
-                </a>
-              </MDBNavItem>
-            </>
-          )}
         </MDBNavbarNav>
       </MDBCollapse>
     </MDBNavbar>

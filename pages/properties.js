@@ -1,6 +1,5 @@
 import React from "react";
 import Head from "next/head";
-import api from "../auth/axios";
 import Layout from "../components/Layout";
 import Card from "../components/Card";
 import { MDBContainer } from "mdb-react-ui-kit";
@@ -60,16 +59,13 @@ const Properties = ({ properties, currentPage, pageCount }) => {
 
 export const getServerSideProps = async ({ query }) => {
   const page = query.page || 1;
-  const { data } = await api.get(`/api/properties?page=${page}`);
-  const properties = data.data;
-  const currentPage = data.currentPage;
-  const pageCount = data.totalPages;
+  const totalPages = 2;
 
   return {
     props: {
-      properties,
-      currentPage,
-      pageCount,
+      properties: [],
+      page,
+      totalPages,
     },
   };
 };

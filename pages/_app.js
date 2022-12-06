@@ -5,7 +5,6 @@ import "@fortawesome/fontawesome-free/css/all.min.css";
 import "bootstrap-css-only/css/bootstrap.min.css";
 import "mdb-react-ui-kit/dist/css/mdb.min.css";
 import "react-awesome-slider/dist/styles.css";
-import { AuthProvider } from "../auth/context";
 import Nprogress from "nprogress";
 import Router from "next/router";
 import Head from "next/head";
@@ -22,9 +21,7 @@ function MyApp({ Component, pageProps }) {
       <Head>
         <link rel="stylesheet" type="text/css" href="/nprogress.css" />
       </Head>
-      <AuthProvider>
-        <Component {...pageProps} />
-      </AuthProvider>
+      <Component {...pageProps} />
     </>
   );
 }

@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Layout from "../../components/Layout";
 import { useRouter } from "next/router";
-import api from "../../auth/axios";
 import { MDBContainer } from "mdb-react-ui-kit";
 import Card from "../../components/Card";
 import SearchFilter from "../../components/SearchFilter";
@@ -12,14 +11,8 @@ const Search = () => {
 
   useEffect(() => {
     async function getProperty() {
-      console.log(router.query.title, router.query.category)
-      const { data } = await api.post("/api/property/list/search", {
-        filters: {
-          title: router.query.title,
-          category: router.query.category,
-        },
-      });
-      setProperties(data);
+      console.log(router.query.title, router.query.category);
+      setProperties([]);
     }
     getProperty();
   }, [router.query.title, router.query.category]);
