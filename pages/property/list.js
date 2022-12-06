@@ -2,18 +2,12 @@ import React from "react";
 import { MDBContainer, MDBDataTableV5, MDBIcon, MDBView } from "mdbreact";
 import { AdminRoute } from "../../auth/adminRoutes";
 import Layout from "../../components/Layout";
-import useSWR from "swr";
-import api from "../../auth/axios";
 import dayjs from "dayjs";
 import { PriceFormated } from "../../components/Helpers";
-import useAuth from "../../auth/context";
 import Link from "next/link";
 
-const fetcher = (url) => api.get(url).then((res) => res.data.data);
-
 const PropertyList = () => {
-  const { user } = useAuth();
-  const { data: properties } = useSWR("/api/properties?limit=30", fetcher);
+  const properties = [];
 
   const styles = {
     forcedInline: {
@@ -140,29 +134,7 @@ const PropertyList = () => {
       }),
   };
 
-  return (
-    <div>
-      {user && user.role === "admin" && (
-        <Layout>
-          <MDBContainer fluid>
-            <MDBDataTableV5
-              hover
-              entriesOptions={[5, 10, 15, 20, 30]}
-              entries={5}
-              pagesAmount={4}
-              data={datatable}
-              pagingTop
-              entriesLabel="Biens par page"
-              infoLabel={["Affiche", "à", "de", "biens"]}
-              searchTop
-              searchBottom={false}
-              responsive={true}
-            />
-          </MDBContainer>
-        </Layout>
-      )}
-    </div>
-  );
+  return <div></div>;
 };
 
 export default AdminRoute(PropertyList);
