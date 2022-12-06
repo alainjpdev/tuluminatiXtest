@@ -12,6 +12,7 @@ import {
 import { PriceFormated } from "../Helpers";
 import Link from "next/link";
 import Map from "../Map";
+import NewMap from "../NewMap/NewMap";
 
 const PropertyVip = ({ properties }) => (
   <section
@@ -21,7 +22,8 @@ const PropertyVip = ({ properties }) => (
     <h2 className="h2-responsive font-weight-bold text-center my-4 text-night">
       The best properties in Riviera Maya
     </h2>
-    <Map />
+    {/* <NewMap />
+    <Map />*/}
     <MDBRow>
       {properties &&
         properties.map((property) => (
