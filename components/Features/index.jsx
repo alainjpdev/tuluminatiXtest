@@ -5,14 +5,11 @@ const Features = ({ handleDisplay }) => {
   return (
     <section className="text-center mb-5">
       <h2 className="h2-responsive font-weight-bold text-center mb-4 text-night">
-        Pourquoi nous-choisir ?
+      Why chose us?
       </h2>
 
       <p className="grey-text w-responsive mx-auto mb-5 wow fadeIn">
-        Valoriser son bien est d'une importance capitale pour une vente
-        réussite, chez WebImmo nous en avons pleinement confiance, et c'est pour
-        cela que toute notre expertise et notre expérience sont mises en oeuvre
-        pour vous accompagner.
+      As the most-visited real estate website in the United States, Zillow and its affiliates offer customers an on-demand experience for selling, buying, renting and financing with transparency and nearly seamless end-to-end service. Zillow Home Loans, our affiliate lender, provides our customers with an easy option to get pre-approved and secure financing for their next home purchase.
       </p>
 
       <div className="row wow fadeIn">
@@ -23,16 +20,16 @@ const Features = ({ handleDisplay }) => {
             </div>
             <br />
             <h5 className="text-dark font-weight-bold mt-2">
-              Numérisation de votre bien
+            Digitization of your property
             </h5>
             <div className="mt-1">
               <p className="mx-3 grey-text">
-                Nous mettons en place gratuitement un service de visite
-                virtuelle. Cela permet de faire, pour nos clients locaux et
-                internationaux, une pré-visite de votre bien. Cela permet de
-                sélectionner les clients et ainsi obtenir des clients de qualité
-                pour vous faire gagner du temps. Enfin, votre bien est visitable
-                24h/24 et 7jr/7 !
+              We set up a free visit service
+                 Virtual. This makes it possible, for our local customers and
+                 international, a pre-visit of your property. This allows to
+                 select customers and thus obtain quality customers
+                 to save you time. Finally, your property can be visited
+                 24/7!
               </p>
             </div>
           </div>
@@ -45,15 +42,15 @@ const Features = ({ handleDisplay }) => {
             </div>
             <br />
             <h5 className="text-dark font-weight-bold mt-2">
-              Présence dans le catalogue immobilier
+            Presence in the real estate catalog
             </h5>
             <div className="mt-1">
               <p className="mx-3 grey-text">
-                En nous faisant confiance, votre bien immobilier paraîtra dans
-                notre catalogue immobilier distribué chez les professions
-                libérales de votre quartier, ainsi que dans les commerces de
-                proximité. Ainsi, votre bien gagne toujours plus en visibilité
-                et en présence physique comme numérique.
+          By trusting us, your property will appear in
+                 our real estate catalog distributed among the professions
+                 liberals in your neighborhood, as well as in the shops of
+                 proximity. Thus, your property always gains more visibility
+                 and in both physical and digital presence.
               </p>
             </div>
           </div>
@@ -66,15 +63,15 @@ const Features = ({ handleDisplay }) => {
             </div>
             <br />
             <h5 className="text-dark font-weight-bold mt-2">
-              Suivi personnalisé
+            Personalized follow-up
             </h5>
             <div className="mt-1">
               <p className="mx-3 grey-text">
-                Notre équipe vous accompagne dans votre projet immobilier. Vous
-                n’aurez qu’un seul & unique interlocuteur durant toute la durée
-                de la vente. Nous nous engageons à vous fournir un compte-rendu
-                hebdomadaire avec statistiques et à vous informer en temps réel
-                de l’évolution du marché.
+              Our team supports you in your real estate project. You
+                 will have only one and only interlocutor throughout the duration
+                 sales. We are committed to providing you with a report
+                 weekly with statistics and to inform you in real time
+                 of market developments.
               </p>
             </div>
           </div>
@@ -85,7 +82,7 @@ const Features = ({ handleDisplay }) => {
           className="lift py-3 ml-3 globalBtn topMarged"
           onClick={handleDisplay}
         >
-          Voir les biens de l'agence
+         See the properties of the agency
         </button>
       </div>
     </section>

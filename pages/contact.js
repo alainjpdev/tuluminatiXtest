@@ -36,27 +36,28 @@ const ContactPage = () => {
                   <MDBCardBody className="form">
                     <h3 className="mt-4">
                       <MDBIcon icon="envelope" className="pr-2" />
-                      Ecrivez-nous:
+                    Contact us:
                     </h3>
                     <MDBRow>
-                      <MDBCol md="6">
-                        <div className="md-form mb-0">
+                      <MDBCol md="12">
+                        <div className="md-form mb-1">
                           <MDBInput
                             type="text"
                             id="form-contact-name"
-                            label="Votre nom"
+                            label="Name"
+                            placeholder="name here"
                           />
                         </div>
                       </MDBCol>
-                      <MDBCol md="6">
+                      {/* <MDBCol md="6">
                         <div className="md-form mb-0">
                           <MDBInput
                             type="text"
                             id="form-contact-firstname"
-                            label="Votre prénom"
+                            label=""
                           />
                         </div>
-                      </MDBCol>
+                      </MDBCol> */}
                     </MDBRow>
                     <MDBRow>
                       <MDBCol md="6">
@@ -64,7 +65,7 @@ const ContactPage = () => {
                           <MDBInput
                             type="text"
                             id="form-contact-phone"
-                            label="Votre numéro de téléphone"
+                            label="Phone"
                           />
                         </div>
                       </MDBCol>
@@ -73,7 +74,7 @@ const ContactPage = () => {
                           <MDBInput
                             type="text"
                             id="form-contact-email"
-                            label="Votre email"
+                            label="Email"
                           />
                         </div>
                       </MDBCol>
@@ -84,13 +85,13 @@ const ContactPage = () => {
                           <MDBInput
                             type="textarea"
                             id="form-contact-message"
-                            label="Votre message"
+                            label="Your message"
                           />
                           <button
                             className="btn-block smBtn"
                             onClick={onSubmit}
                           >
-                            Envoyer
+                            Send
                           </button>
                         </div>
                       </MDBCol>
@@ -99,56 +100,56 @@ const ContactPage = () => {
                 </MDBCol>
                 <MDBCol lg="4">
                   <MDBCardBody className="contact text-center h-100 white-text">
-                    <h3 className="my-4 pb-2">Informations de contact</h3>
+                    <h3 className="my-4 pb-2">Contact Information</h3>
                     <ul className="text-lg-left list-unstyled ml-4">
                       <li>
                         <p>
                           <MDBIcon icon="map-marker-alt" className="pr-2" />
-                          France
+                          Tulum, Quintana Roo, Mexico
                         </p>
                       </li>
                       <li>
                         <p>
                           <MDBIcon icon="phone" className="pr-2" />
-                          +33758742561
+                          +54 9 3514 59-9369
                         </p>
                       </li>
                       <li>
                         <p>
                           <MDBIcon icon="envelope" className="pr-2" />
-                          Julienlamalle63100@gmail.com
+                          cami@gmail.com
                         </p>
                       </li>
                     </ul>
                     <hr className="hr-light my-4" />
                     <ul className="list-inline text-center list-unstyled">
-                      <li className="list-inline-item">
+                      {/* <li className="list-inline-item">
                         <a
-                          href="https://github.com/JulienLamalle"
+                          href="https://github.com/"
                           className="p-2 fa-lg w-ic text-night"
                           target="_blank"
                         >
                           <MDBIcon fab icon="github" />
                         </a>
-                      </li>
-                      <li className="list-inline-item">
+                      </li> */}
+                      {/* <li className="list-inline-item">
                         <a
-                          href="https://www.linkedin.com/in/julien-lamalle"
+                          href="https://www.linkedin.com/in/"
                           className="p-2 fa-lg w-ic text-night"
                           target="_blank"
                         >
                           <MDBIcon fab icon="linkedin-in" />
                         </a>
-                      </li>
-                      <li className="list-inline-item">
+                      </li> */}
+                      {/* <li className="list-inline-item">
                         <a
-                          href="https://julienlamalle.netlify.app/"
+                          href=""
                           className="p-2 fa-lg w-ic text-night"
                           target="_blank"
                         >
                           <MDBIcon fa icon="globe" />
                         </a>
-                      </li>
+                      </li> */}
                     </ul>
                   </MDBCardBody>
                 </MDBCol>
