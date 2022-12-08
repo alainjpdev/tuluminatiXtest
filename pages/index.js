@@ -7,9 +7,12 @@ import Carousel from "../components/Carousel";
 import PropertySection from "../components/PropertySection";
 import Features from "../components/Features";
 import { propertiesMock } from "../src/constants";
+import Map from "../components/Map";
+import { Flex } from "@chakra-ui/react";
 
 export default function Home({ propertiesVip, properties }) {
   const [estate, setEstate] = useState(true);
+  const [coordinates, setCoordinates] = useState({lat:0, lng:0})
 
   const handleDisplay = (event) => {
     event.preventDefault();
@@ -25,6 +28,17 @@ export default function Home({ propertiesVip, properties }) {
         </Head>
         <Layout>
           <Carousel />
+          <Flex
+      justifyContent={"center"}
+      alignItems={"center"}
+      width={"100vw"}
+      height={"100vh"}
+      maxWidth={"100vw"}
+      maxHeight={"100vh"}
+      position={"relative"}
+    >
+          <Map setCoordinates={ setCoordinates } coordinates={ coordinates}/>
+          </Flex>
           <MDBContainer>
             <PropertyVip properties={propertiesVip} />
             <PropertySection
@@ -48,6 +62,7 @@ export default function Home({ propertiesVip, properties }) {
         </Head>
         <Layout>
           <Carousel />
+          {/* <Map/> */}
           <MDBContainer>
             <Features handleDisplay={handleDisplay} />
           </MDBContainer>

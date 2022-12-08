@@ -12,7 +12,7 @@ export const propertiesMock = {
         lat: "20.201300850472347",
         lng: "-87.44990084555297",
       },
-      price: 400,
+      price: 400000,
       priceRange: ["166337", "934,000"],
       images: [
         "https://res.cloudinary.com/dk473trop/image/upload/v1669829395/aflora/mKq0O19ft3See4DebonO4r1k8k05nsG-9Hp0UntCUms_kwlg31.jpg",
